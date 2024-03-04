@@ -14,4 +14,4 @@ __pycache__
 
 ## ignore version file
 .version
-pesummary/_version.py
+bilby_lisa/_version.py
