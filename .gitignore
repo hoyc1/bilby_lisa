@@ -1,0 +1,17 @@
+## ignore .pyc files
+*.pyc
+
+## ignore .egg files
+*.egg-info
+
+## ignore build and dist directories
+build/
+dist/
+docs/_*
+
+## ignore __pycache__ directories
+__pycache__
+
+## ignore version file
+.version
+pesummary/_version.py

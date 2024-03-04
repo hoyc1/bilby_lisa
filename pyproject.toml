@@ -1,0 +1,50 @@
+[build-system]
+requires = [
+	"setuptools>=61.0",
+	"setuptools_scm[toml]>=3.4.3",
+	"wheel",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bilby_lisa"
+authors = [
+	{ name = "Charlie Hoy", email = "charlie.hoy@port.ac.uk" },
+	{ name = "Laura Nuttall", email = "laura.nuttall@port.ac.uk" },
+]
+description = "Python package to extend the functionality of `bilby` to perform Bayesian inference with the LISA gravitational-wave detector"
+readme = "README.md"
+license = { text = "MIT" }
+classifiers = [
+        "License :: OSI Approved :: MIT License",
+        "Natural Language :: English",
+        "Programming Language :: Python",
+        "Programming Language :: Python :: 3",
+        "Programming Language :: Python :: 3.9",
+        "Programming Language :: Python :: 3.10",
+]
+requires-python = ">=3.9"
+dependencies = [
+	"bilby @ git+https://git.ligo.org/charlie.hoy/bilby.git@ifo_plugin",
+	"bilby_pipe @ git+https://git.ligo.org/charlie.hoy/bilby_pipe.git@input_plus_det_plugin",
+	"parallel_bilby @ git+https://git.ligo.org/charlie.hoy/parallel_bilby.git@input_plus_parser",
+	"bbhx @ git+https://github.com/mikekatz04/BBHx.git",
+]
+dynamic = ["version"]
+
+[project.entry-points."bilby.gw.detector"]
+LISA = "bilby_lisa.networks:LISA"
+LISA_A = "bilby_lisa.interferometer:LISAChannel"
+LISA_E = "bilby_lisa.interferometer:LISAChannel"
+LISA_T = "bilby_lisa.interferometer:LISAChannel"
+
+[tool.setuptools]
+packages = [
+	"bilby_lisa"
+]
+license-files = [
+	"LICENSE.md",
+]
+
+[tool.setuptools_scm]
+write_to = "bilby_lisa/_version.py"
