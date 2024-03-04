@@ -73,7 +73,7 @@ The required non-released versions of `bilby`, `bilby_pipe` and
 `parallel_bilby` can be installed with:
 
 ```bash
-$ python -m pip install "git+https://git.ligo.org/charlie.hoy/bilby.git@ifo_plugin" "git+https://git.ligo.org/charlie.hoy/bilby_pipe.git@input_plus_det_plugin" "git+https://git.ligo.org/charlie.hoy/parallel_bilby.git@input_plus_parser"
+$ python -m pip install --force-reinstall "git+https://git.ligo.org/charlie.hoy/bilby.git@ifo_plugin" "git+https://git.ligo.org/charlie.hoy/bilby_pipe.git@input_plus_det_plugin" "git+https://git.ligo.org/charlie.hoy/parallel_bilby.git@input_plus_parser"
 ```
 
 and the [`bbhx`](https://github.com/mikekatz04/BBHx) package can be installed
@@ -87,7 +87,7 @@ Alternatively, you can clone the git repository, navigate to the root
 source directory and run,
 
 ```bash
-$ python -m pip install -r requirements.txt
+$ python -m pip install -r requirements.txt --force-reinstall
 ```
 
 The non-released versions of `bilby`, `bilby_pipe` and `parallel_bilby` are

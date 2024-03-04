@@ -1,7 +1,7 @@
 # Licensed under an MIT style license -- see LICENSE.md
 
 from bilby_pipe.input import Input as _Input
-from bilby_pipe.main import MainInput as _MainInput
+from bilby_pipe.main import MainInput as _MainInput, main
 from bilby_pipe.data_generation import DataGenerationInput as _DGInput
 from bilby_pipe.data_analysis import DataAnalysisInput as _DAInput
 from bilby_pipe.utils import logger, pretty_print_dictionary, BilbyPipeError
@@ -239,3 +239,12 @@ def create_parser(top_level=False):
         generation_input_class="bilby_lisa.bilby_pipe.DataGenerationInput",
     )
     return parser
+
+
+def bilby_pipe_main():
+    """A modified, top-level interface for bilby_pipe which first checks the
+    `bilby_lisa` installation
+    """
+    from .utils import get_version_info
+    get_version_info()
+    main()

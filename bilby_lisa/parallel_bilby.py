@@ -2,7 +2,7 @@
 
 from .bilby_pipe import DataGenerationInput
 from parallel_bilby.generation import (
-    ParallelBilbyDataGenerationInput as _DGInput
+    ParallelBilbyDataGenerationInput as _DGInput, main
 )
 
 __author__ = ["Charlie Hoy <charlie.hoy@ligo.org>"]
@@ -33,3 +33,12 @@ def create_generation_parser():
         ),
     )
     return parser
+
+
+def parallel_bilby_generation_main():
+    """A modified, top-level interface for parallel_bilby_generation which
+    first checks the `bilby_lisa` installation
+    """
+    from .utils import get_version_info
+    get_version_info()
+    main()
