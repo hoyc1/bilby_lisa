@@ -88,7 +88,7 @@ def lisa_binary_black_hole(
     waveform_kwargs = dict(
         reference_frequency=0.0, minimum_frequency=1e-4,
         maximum_frequency=frequency_array[-1], catch_waveform_errors=False,
-        mode_array=[[2, 2]], ifos=_implemented_channels, t_obs_start=1.0,
+        mode_array=None, ifos=_implemented_channels, t_obs_start=1.0,
         t_obs_end=0.0, reference_frame='LISA',
         waveform_approximant="BBHx_IMRPhenomD", relative=False,
     )
@@ -270,6 +270,8 @@ def _bbhx_binary_black_hole(
         )
     if "phenomd" in waveform_kwargs["waveform_approximant"].lower():
         amp_phase_kwargs = dict(run_phenomd=True)
+        # force mode_array to be [2, 2] only
+        waveform_kwargs["mode_array"] = [[2, 2]]
     else:
         amp_phase_kwargs = dict(run_phenomd=False)
     wave_gen = BBHWaveformFD(amp_phase_kwargs=amp_phase_kwargs)
