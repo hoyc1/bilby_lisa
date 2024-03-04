@@ -25,10 +25,9 @@ classifiers = [
 ]
 requires-python = ">=3.9"
 dependencies = [
-	"bilby @ git+https://git.ligo.org/charlie.hoy/bilby.git@ifo_plugin",
-	"bilby_pipe @ git+https://git.ligo.org/charlie.hoy/bilby_pipe.git@input_plus_det_plugin",
-	"parallel_bilby @ git+https://git.ligo.org/charlie.hoy/parallel_bilby.git@input_plus_parser",
-	"bbhx @ git+https://github.com/mikekatz04/BBHx.git",
+	"bilby == 2.2.2",
+        "bilby_pipe == 1.3.0",
+        "parallel_bilby == 2.0.2",
 ]
 dynamic = ["version"]
 
