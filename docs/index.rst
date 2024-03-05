@@ -31,3 +31,4 @@ BILBY in space: Bayesian inference for transient gravitational-wave signals obse
    :caption: Contents:
 
    installation
+   citing
