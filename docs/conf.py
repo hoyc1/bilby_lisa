@@ -6,11 +6,8 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 try:
-    import importlib
-    # The full version, including alpha/beta/rc tags.
-    release = importlib.metadata.version(project.lower())
-    # The short X.Y version.
-    version = release.split('+', 1)[0]
+    import bilby_lisa
+    release = bilby_lisa.__version__
 except Exception:
     release = "unknown"
 
