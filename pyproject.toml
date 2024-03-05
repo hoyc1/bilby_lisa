@@ -26,8 +26,8 @@ classifiers = [
 requires-python = ">=3.9"
 dependencies = [
 	"bilby",
-        "bilby_pipe",
-        "parallel_bilby",
+	"bilby_pipe",
+	"parallel_bilby"
 ]
 dynamic = ["version"]
 
