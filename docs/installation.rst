@@ -41,7 +41,12 @@ created with,
 
         .. code-block::
 
-            $ python -m pip install bilby_lisa
+            $ python -m pip install bilby_lisa[parallel]
+
+        .. note::
+
+            If you do not wish to use/install ``parallel_bilby``, you can
+            remove ``[parallel]`` from the ``pip install`` command above.
 
     .. tab:: From source
 
@@ -65,7 +70,12 @@ created with,
 
             $ git clone git@github.com:hoyc1/bilby_lisa.git
             $ cd bilby_lisa
-            $ python -m pip install .
+            $ python -m pip install .[parallel]
+
+        .. note::
+
+            If you do not wish to use/install ``parallel_bilby``, you can
+            remove ``[parallel]`` from the ``pip install`` command above.
 
 Once ``bilby_lisa`` has been installed, non-released versions of ``bilby``,
 ``bilby_pipe`` and ``parallel_bilby`` need to be installed. This is because we
