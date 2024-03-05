@@ -31,6 +31,13 @@ dependencies = [
 ]
 dynamic = ["version"]
 
+[project.optional-dependencies]
+docs = [
+	"Sphinx >=1.2.2",
+	"sphinx-immaterial",
+	"sphinx-tabs"
+]	
+
 [project.entry-points."bilby.gw.detector"]
 LISA = "bilby_lisa.networks:LISA"
 LISA_A = "bilby_lisa.interferometer:LISAChannel"
