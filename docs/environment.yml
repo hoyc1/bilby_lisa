@@ -9,4 +9,4 @@ dependencies:
   - sphinx
   - bilby
   - bilby_pipe
-  - parallel_bilby
+  - parallel-bilby
