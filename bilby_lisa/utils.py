@@ -3,6 +3,11 @@
 from bilby_pipe.utils import logger
 
 __author__ = ["Charlie Hoy <charlie.hoy@ligo.org>"]
+version_error_string = (
+    "`bilby_lisa` currently requires a non-released version of `{}` "
+    "(you have {} installed currently). Please read the README.md file "
+    "in the source repository for full installation instructions"
+)
 
 
 def get_warning():

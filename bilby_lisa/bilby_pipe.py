@@ -245,6 +245,17 @@ def bilby_pipe_main():
     """A modified, top-level interface for bilby_pipe which first checks the
     `bilby_lisa` installation
     """
-    from .utils import get_version_info
+    from .utils import get_version_info, version_error_string
+    import bilby
+    import bilby_pipe
+
     get_version_info()
+    if "f027394" not in bilby.__version__:
+        raise ImportError(
+            version_error_string.format('bilby', bilby.__version__)
+        )
+    if "581eb9a" not in bilby_pipe.__version__:
+        raise ImportError(
+            version_error_string.format('bilby_pipe', bilby_pipe.__version__)
+        )
     main()

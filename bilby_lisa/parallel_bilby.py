@@ -39,6 +39,14 @@ def parallel_bilby_generation_main():
     """A modified, top-level interface for parallel_bilby_generation which
     first checks the `bilby_lisa` installation
     """
-    from .utils import get_version_info
+    from .utils import get_version_info, version_error_string
+    import parallel_bilby
+
     get_version_info()
+    if "e4e2f7b" not in parallel_bilby.__version__:
+        raise ImportError(
+            version_error_string.format(
+                'parallel_bilby', parallel_bilby.__version__
+            )
+        )
     main()
