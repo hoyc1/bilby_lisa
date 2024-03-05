@@ -7,10 +7,7 @@ version: 2
 build:
   os: "ubuntu-20.04"
   tools:
-    python: "mambaforge-latest"
-
-conda:
-  environment: docs/environment.yml
+    python = "3.10"
 
 sphinx:
   configuration: docs/conf.py
@@ -21,4 +18,3 @@ python:
       path: .
       extra_requirements:
         - docs
-    - requirements: requirements.txt
