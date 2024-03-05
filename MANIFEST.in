@@ -1,2 +1,2 @@
 include LICENSE.md README.md
-include bilby_lisa/.version
+include bilby_lisa/_version.py
