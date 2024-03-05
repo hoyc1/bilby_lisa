@@ -24,9 +24,9 @@ created with,
     .. tab:: PyPI
 
         If installing with ``pip``, additional dependencies need to be
-        installed for compatibility with
-        `bbhx <https://github.com/mikekatz04/BBHx>`_. The additional
-        dependencies can be installed with,
+        installed for compatibility with the
+        `bbhx <https://github.com/mikekatz04/BBHx>`_ package (a package used for
+        waveform generation). The additional dependencies can be installed with,
 
         .. code-block:: console
 
@@ -50,10 +50,10 @@ created with,
 
     .. tab:: From source
 
-        If installing from source, additional dependencies need to be
-        installed for compatibility with
-        `bbhx <https://github.com/mikekatz04/BBHx>`_. The additional
-        dependencies can be installed with,
+        If installing with ``pip``, additional dependencies need to be
+        installed for compatibility with the
+        `bbhx <https://github.com/mikekatz04/BBHx>`_ package (a package used for
+        waveform generation). The additional dependencies can be installed with,
 
         .. code-block:: console
 
