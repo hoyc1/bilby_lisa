@@ -2,19 +2,14 @@ Installation instructions
 =========================
 
 ``bilby_lisa`` can be installed through a variety of methods, see below.
-However, we always recommend installing ``bilby_lisa`` within a conda
-environment. For speed, we recommend creating an environment with
-`mamba <https://mamba.readthedocs.io/en/latest/>`_. An environment with all
-required dependencies can be installed with,
+Independent of the method chosen, we recommend installing ``bilby_lisa`` within
+a conda environment. For speed, we recommend creating an environment with
+`mamba <https://mamba.readthedocs.io/en/latest/>`_. An environment can be
+created with,
 
 .. code-block:: console
 
-    $ mamba create --name bilby-lisa python=3.10 numpy schwimmbad gcc_linux-64 gxx_linux-64 gsl lapack=3.6.1 Cython
-
-.. note::
-
-    If on MACOSX, substitue ``gcc_linux-64`` and ``gxx_linux-64`` with
-    ``clang_osx-64`` and ``clangxx_osx-64``.
+    $ mamba create --name bilby-lisa python=3.10
 
 ``bilby_lisa`` can then be installed with,
 
@@ -28,11 +23,43 @@ required dependencies can be installed with,
 
     .. tab:: PyPI
 
+        If installing with ``pip``, additional dependencies need to be
+        installed for compatibility with
+        `bbhx <https://github.com/mikekatz04/BBHx>`_. The additional
+        dependencies can be installed with,
+
+        .. code-block:: console
+
+            $ mamba install numpy schwimmbad gcc_linux-64 gxx_linux-64 gsl lapack=3.6.1 Cython
+
+        .. note::
+
+            If on MACOSX, substitue ``gcc_linux-64`` and ``gxx_linux-64`` with
+            ``clang_osx-64`` and ``clangxx_osx-64``.
+
+        ``bilby_lisa`` can then be installed with,
+
         .. code-block::
 
             $ python -m pip install bilby_lisa
 
     .. tab:: From source
+
+        If installing from source, additional dependencies need to be
+        installed for compatibility with
+        `bbhx <https://github.com/mikekatz04/BBHx>`_. The additional
+        dependencies can be installed with,
+
+        .. code-block:: console
+
+            $ mamba install numpy schwimmbad gcc_linux-64 gxx_linux-64 gsl lapack=3.6.1 Cython
+
+        .. note::
+
+            If on MACOSX, substitue ``gcc_linux-64`` and ``gxx_linux-64`` with
+            ``clang_osx-64`` and ``clangxx_osx-64``.
+
+        ``bilby_lisa`` can then be installed with,
 
         .. code-block::
 
