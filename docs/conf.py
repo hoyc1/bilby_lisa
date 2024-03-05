@@ -7,7 +7,7 @@
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 try:
     import bilby_lisa
-    release = bilby_lisa.__version__
+    release = bilby_lisa.__version__.split("+", 1)[0]
 except Exception:
     release = "unknown"
 
