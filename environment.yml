@@ -1,0 +1,21 @@
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - bilby
+  - bilby_pipe
+  - cython
+  - gcc_linux-64
+  - gsl
+  - gxx_linux-64
+  - lapack =3.6.1
+  - numpy
+  - pip
+  - python >=3.9
+  - schwimmbad
+  - pip:
+    - bilby @ git+https://git.ligo.org/charlie.hoy/bilby.git@ifo_plugin
+    - bilby_lisa
+    - bilby_pipe @ git+https://git.ligo.org/charlie.hoy/bilby_pipe.git@input_plus_det_plugin
+    - parallel_bilby @ git+https://git.ligo.org/charlie.hoy/parallel_bilby.git@input_plus_parser
+    - bbhx @ git+https://github.com/mikekatz04/BBHx.git
