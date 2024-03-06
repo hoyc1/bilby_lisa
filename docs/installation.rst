@@ -59,11 +59,6 @@ installed with,
 
             $ python -m pip install bilby_lisa[parallel]
 
-        .. note::
-
-            If you do not wish to use/install ``parallel_bilby``, you can
-            remove ``[parallel]`` from the ``pip install`` command above.
-
         Once ``bilby_lisa`` has been installed, non-released versions of
         ``bilby``, ``bilby_pipe`` and ``parallel_bilby`` need to be installed.
         This is because we are waiting for required code to be merged into the
@@ -121,11 +116,6 @@ installed with,
             $ cd bilby_lisa
             $ python -m pip install .[parallel]
 
-        .. note::
-
-            If you do not wish to use/install ``parallel_bilby``, you can
-            remove ``[parallel]`` from the ``pip install`` command above.
-
         Once ``bilby_lisa`` has been installed, non-released versions of
         ``bilby``, ``bilby_pipe`` and ``parallel_bilby`` need to be installed.
         This is because we are waiting for required code to be merged into the
@@ -159,4 +149,4 @@ installed with,
 
         * ``bilby``: `v2.2.2 <https://git.ligo.org/lscsoft/bilby/-/tags/v2.2.2>`_
         * ``bilby_pipe``: `v1.3.0 <https://git.ligo.org/lscsoft/bilby_pipe/-/tags/v1.3.0>`_
-        * ``parallel_bilby``: `v2.0.2 <https://git.ligo.org/lscsoft/parallel_bilby/-/tags/v2.0.2>`
+        * ``parallel_bilby``: `v2.0.2 <https://git.ligo.org/lscsoft/parallel_bilby/-/tags/v2.0.2>`_
