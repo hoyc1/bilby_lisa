@@ -93,6 +93,8 @@ def lisa_binary_black_hole(
         waveform_approximant="BBHx_IMRPhenomD", relative=False,
     )
     waveform_kwargs.update(kwargs)
+    if isinstance(waveform_kwargs["mode_array"], tuple):
+        waveform_kwargs["mode_array"] = list(waveform_kwargs["mode_array"])
     _channels_to_calculate = [
         _ for _ in waveform_kwargs["ifos"] if _ in _implemented_channels
     ]
