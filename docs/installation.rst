@@ -83,7 +83,7 @@ installed with,
 
         .. code-block:: console
 
-            $ python -m pip install "git+https://github.com/mikekatz04/BBHx.git"
+            $ python -m pip install "git+https://github.com/mikekatz04/BBHx.git@4fff509b5afc770f40e492f946b0b2ac2aedbf5b"
 
         The non-released versions of ``bilby``, ``bilby_pipe`` and
         ``parallel_bilby`` are rebased onto the following tags:
@@ -91,6 +91,10 @@ installed with,
         * ``bilby``: `v2.2.2 <https://git.ligo.org/lscsoft/bilby/-/tags/v2.2.2>`_
         * ``bilby_pipe``: `v1.3.0 <https://git.ligo.org/lscsoft/bilby_pipe/-/tags/v1.3.0>`_
         * ``parallel_bilby``: `v2.0.2 <https://git.ligo.org/lscsoft/parallel_bilby/-/tags/v2.0.2>`_
+
+        and we fix ``bbhx`` to a specific commit since after March 22nd 2024
+        ``bbhx`` required ``python >= 3.12`` which is currently incompatible
+        with ``bilby``.
 
 
     .. tab:: From source
@@ -142,6 +146,7 @@ installed with,
 
             $ git clone https://github.com/mikekatz04/BBHx.git
             $ cd BBHx
+            $ git checkout 4fff509b5afc770f40e492f946b0b2ac2aedbf5b
             $ python setup.py install
 
         The non-released versions of ``bilby``, ``bilby_pipe`` and
@@ -150,3 +155,7 @@ installed with,
         * ``bilby``: `v2.2.2 <https://git.ligo.org/lscsoft/bilby/-/tags/v2.2.2>`_
         * ``bilby_pipe``: `v1.3.0 <https://git.ligo.org/lscsoft/bilby_pipe/-/tags/v1.3.0>`_
         * ``parallel_bilby``: `v2.0.2 <https://git.ligo.org/lscsoft/parallel_bilby/-/tags/v2.0.2>`_
+
+        and we fix ``bbhx`` to a specific commit since after March 22nd 2024
+        ``bbhx`` required ``python >= 3.12`` which is currently incompatible
+        with ``bilby``.

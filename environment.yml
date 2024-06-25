@@ -18,4 +18,4 @@ dependencies:
     - bilby_lisa
     - bilby_pipe @ git+https://git.ligo.org/charlie.hoy/bilby_pipe.git@input_plus_det_plugin
     - parallel_bilby @ git+https://git.ligo.org/charlie.hoy/parallel_bilby.git@input_plus_parser
-    - bbhx @ git+https://github.com/mikekatz04/BBHx.git
+    - bbhx @ git+https://github.com/mikekatz04/BBHx.git@4fff509b5afc770f40e492f946b0b2ac2aedbf5b
