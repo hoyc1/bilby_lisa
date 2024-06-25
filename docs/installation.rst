@@ -38,6 +38,11 @@ installed with,
             * ``bilby_pipe``: `v1.3.0 <https://git.ligo.org/lscsoft/bilby_pipe/-/tags/v1.3.0>`_
             * ``parallel_bilby``: `v2.0.2 <https://git.ligo.org/lscsoft/parallel_bilby/-/tags/v2.0.2>`_
 
+            Similarly, as part of the installation process a pinned version of
+            `bbhx <https://github.com/mikekatz04/BBHx>`_ is installed. This is
+            because after March 22nd 2024 ``bbhx`` required ``python >= 3.12``
+            which is currently incompatible with ``bilby``.
+
     .. tab:: PyPI
 
         If installing with ``pip``, an enviroment must first be created. An
