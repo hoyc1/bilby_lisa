@@ -12,7 +12,7 @@ dependencies:
   - numpy
   - pip
   - python >=3.9
-  - schwimmbad
+  - schwimmbad <=0.3.2
   - pip:
     - bilby @ git+https://git.ligo.org/charlie.hoy/bilby.git@ifo_plugin
     - bilby_lisa

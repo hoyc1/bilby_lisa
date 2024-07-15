@@ -51,7 +51,7 @@ installed with,
 
         .. code-block:: console
 
-            $ mamba create --name bilby-lisa python=3.10 numpy schwimmbad gcc_linux-64 gxx_linux-64 gsl lapack=3.6.1 Cython
+            $ mamba create --name bilby-lisa python=3.10 numpy schwimmbad<=0.3.2 gcc_linux-64 gxx_linux-64 gsl lapack=3.6.1 Cython
 
         .. note::
 
@@ -110,7 +110,7 @@ installed with,
 
         .. code-block:: console
 
-            $ mamba create --name bilby-lisa python=3.10 numpy schwimmbad gcc_linux-64 gxx_linux-64 gsl lapack=3.6.1 Cython
+            $ mamba create --name bilby-lisa python=3.10 numpy schwimmbad<=0.3.2 gcc_linux-64 gxx_linux-64 gsl lapack=3.6.1 Cython
 
         .. note::
 
