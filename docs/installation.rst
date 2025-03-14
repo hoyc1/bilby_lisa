@@ -51,7 +51,7 @@ installed with,
 
         .. code-block:: console
 
-            $ mamba create --name bilby-lisa python=3.10 numpy schwimmbad<=0.3.2 gcc_linux-64 gxx_linux-64 gsl lapack=3.6.1 Cython
+            $ mamba create --name bilby-lisa python=3.10 numpy 'schwimmbad<=0.3.2' gcc_linux-64 gxx_linux-64 gsl lapack=3.6.1 Cython
 
         .. note::
 
@@ -110,7 +110,7 @@ installed with,
 
         .. code-block:: console
 
-            $ mamba create --name bilby-lisa python=3.10 numpy schwimmbad<=0.3.2 gcc_linux-64 gxx_linux-64 gsl lapack=3.6.1 Cython
+            $ mamba create --name bilby-lisa python=3.10 numpy 'schwimmbad<=0.3.2' gcc_linux-64 gxx_linux-64 gsl lapack=3.6.1 Cython
 
         .. note::
 
@@ -143,16 +143,6 @@ installed with,
         .. code-block:: console
 
             $ python -m pip install -r requirements.txt --force-reinstall
-
-        Finally, the `bbhx <https://github.com/mikekatz04/BBHx>`_ package used
-        for waveform generation can be installed with,
-
-        .. code-block:: console
-
-            $ git clone https://github.com/mikekatz04/BBHx.git
-            $ cd BBHx
-            $ git checkout 4fff509b5afc770f40e492f946b0b2ac2aedbf5b
-            $ python setup.py install
 
         The non-released versions of ``bilby``, ``bilby_pipe`` and
         ``parallel_bilby`` are rebased onto the following tags:
